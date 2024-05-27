@@ -1,3 +1,63 @@
 body {
-    background-color: aqua;
+    text-align: center;
+    height: 100%; 
+    background-color: rgb(105, 85, 125);
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(102, 102, 174);
+    padding: 0 10px;
+}
+
+.logo {
+    color: rgb(236, 137, 203);
+    text-shadow: 1px 1px 1px black;
+}
+
+.underline {
+    text-decoration: underline solid;
+}
+
+.header { 
+    padding: 10px;
+}
+
+.button {
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(102, 102, 174);
+    font-size: large;
+}
+
+.button:hover {
+    color: rgb(26, 26, 129);
+}
+
+a:hover {
+    color: rgb(26, 26, 129);
+}
+
+footer {
+    font-weight: bold;
+    position: relative;
+    padding: 20px 0;
+    bottom:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: rgb(102, 102, 174);
+    padding: 15px;
+    border: solid;
 }
