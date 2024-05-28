@@ -189,6 +189,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 - Ania Kubow for having alot of ideas to view. github :- https://github.com/kubowania/rock-paper-scissors-x3
 - https://codebeautify.org/htmlviewer that helped me make my html organized.
 - https://www.w3schools.com/ to check how and what choices to use most in my css.
+- I used a free feature of https://www.grammarly.com/grammar-check to check the grammer errors in README.
 
 ## 5.1 Images Used
 
@@ -199,4 +200,4 @@ No logo for the game.
 ## 5.2 Code
 
 Code was recreated from my old project and added new features that would make it more self-made project.
-github :- https://github.com/Sammy92dec/rspgame
+github :- https://github.com/Sammy92dec/the-gamerps
