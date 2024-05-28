@@ -10,18 +10,19 @@
     - [Site Owner](#site-owner)
   - [1.3 Design](#13-design)
 - [2. Features](#2-features)
-  - [2.1 Logo Header Area](#21-header-area)
-  - [2.2 Game Buttons and Result Area](#22-game-choices-area)
-  - [2.3 Score Count \& Images Area](#23-score-count--images-area)
+  - [2.1 Header Area](#21-logo-and-header-area)
+  - [2.2 Result Area and Control Area](#22-result-area-and-control-area)
+  - [2.3 Score Area](#23-score-area)
   - [Footer Section](#footer-section)
-  - [2.4 Features to Implement](#24-features-to-implement)
+  - [2.4 Instructions](#24-instructions)
+  - [2.5 Features to Implement](#24-features-to-implement)
 - [3. Testing](#3-testing)
   - [3.1 HTML Validation](#31-html-validation)
     - [Home Page](#home-page)
   - [3.2 CSS Validation](#32-css-validation)
+  - [3.2 JS Validation](#33-JS-validation)
   - [Acessibility Validation Service](#acessibility-validation-service)
-  - [3.3 Lighthouse](#33-lighthouse)
-  - [3.4 Manual Testing User Stories](#34-manual-testing-user-stories)
+  - [3.4 Lighthouse](#34-lighthouse)
   - [3.5 Bugs and Fixes](#35-bugs-and-fixes)
 - [4. Deployment](#4-deployment)
 - [5. Credits](#5-credits)
@@ -32,11 +33,11 @@
 
 Live link:- https://sammy92dec.github.io/rspgame/
 
-<img src="assets/images/responsive.png">
+<img src="assets/images/res.png">
 
 # 1. Project Overview
 
-Paper, Rock, and Scissor is an interactive web app centered on allowing the user to pass the time playing a fun game. The look, feel, and functionality will be explained in the following sections:
+Paper, Rock, and Scissor is an interactive web app centered on allowing the user to pass the time by playing a fun game. The look, feel, and functionality will be explained in the following sections:
 
 ## 1.1 Project Objective
 
@@ -49,7 +50,7 @@ The project objective was to create an interactive and visually appealing web ap
 - As a first time user I want an excellent visual experience.
 - As a first time user I want to easily interact with website content.
 - As a first time user I want to be able to ask for instructions of how te game is played.
-- As a first time user I want to easily distingish this site as a trusted site which is safe to use.
+- As a first time user I want to easily distinguish this site as a trusted site which is safe to use.
 
 ### Returning users
 
@@ -63,21 +64,21 @@ The project objective was to create an interactive and visually appealing web ap
 
 ## 1.3 Design
 
-To serve as a gaming website, a simplistic but functional design was needed. This combination served two primary purposes. The first purpose, simplicity, was used to maintaine a pleasant look and asthetic to cater and appeal to users of varying age groups.
+To serve as a gaming website, a simplistic but functional design was needed. This combination served two primary purposes. The first purpose, simplicity, was used to maintain a pleasant look and aesthetic to cater to and appeal to users of varying age groups.
 
-For the color scheme those are the colors that stand out.I used "http://colormind.io/image/" for my color palette.
+For the color scheme, those are the colors that stand out. I used "http://colormind.io/image/" for my color palette.
 
 <img src="assets/images/color template.png">
 
 # 2. Features
 
-The website is a two pages which you can play in one page and read instructions if you press te instruction button it will take you to oter page.This gives the user the ability to play the well-known Paper, Rock, and Scissors game if tey are famliar with it.
+The website is  two pages you can play on one page and read instructions if you press the instruction button it will take you to other page. This gives the user the ability to play the well-known Paper, Rock, and Scissors game if they are familiar with it.
 
 ## 2.1 Logo and Header Area
 
-The website was organized into six main sections, those being the logo, header, score area, result area, control area and the footer.
+The website was organized into five main sections, those being the logo, header, score area, result and control area and footer.
 
-The logo just on the top to make the page look nicer.
+The logo is just on the top to make the page look nicer.
 
 <img src="assets/images/logo.png">
 
@@ -85,101 +86,117 @@ The header has instrutions and a button to reset the game and scores.
 
 <img src="assets/images/header.png">
 
-## 2.2 Game Buttons and Result Area
+## 2.2 Result Area and Control Area
 
-The 
+The result area is the choices displayed, by the player and computer. I chose texts and emojis to make the game simple.
 
-The game choices area gives the user the opportunity to choose between rock, paper, scissors.
+<img src="assets/images/choices.png">
+
+The control area gives the user the opportunity to choose between rock, paper and scissors.
 
 <img src="assets/images/buttons.png">
 
-## 2.3 Score Count & Images Area
+## 2.3 Score Area
 
-The game score section has the following functionalies:<br>
+This area includes the players, computers score and the number of rounds.
 
-  1. Upon the user making a choice, the image and background color changes to reflect this choice.
-  2. The game winer score count tally is incremented by 1 for every successful game won. A draw will result in no incrementation of user or computer score.
+The game score section has the following functionalities:<br>
+ 
+  - The game winner score count tally is incremented by 1 for every successful game won. A draw will result in no incrementation in user or computer score.
 
-<img src="">
+  - The rounds show how many games are played.<br>Its only 10 rounds.
+
+<img src="assets/images/score.png">
 
 ## Footer Section
 
-The footer section contains only a copy right text.
+The footer section contains only a copyright text.
 
 <img src="assets/images/footer.png">
 
-## 2.4 Features to Implement
+## 2.4 Instructions
+
+This is an HTML page where it explains to the user how to play and how many rounds.
+
+<img src="assets/images/instruction.png">
+
+## 2.5 Features to Implement
 
 When there is time, I would like to add a player high score area, so that returning users are able to see their placement within all users who may have played the game on this website.
 
 
-
-<!--
 # 3. Testing
 
 ## 3.1 HTML Validation
 
-All documents were validated using the free W3C Markup validation service. A majority of initial errors received pertained to the H2 statements having missing closing statements due to re-editing certain lines of code.
+All documents were validated using W3C Jigsaw HTML validation service.No error was found.
 
-<img src="assets/images/screenshot-validator.w3.org-2022.12.18-17_16_23_HTML.png">
+<img src="assets/images/htmlV.png">
 
-Chrome development tools, as well as Firefox development tools where used to view the site behavior for functionality.
+Chrome development tools, as well as Firefox development tools were used to view the site's behavior for functionality.
 
 
 ### Home Page
 
-<img src="assets/images/homepage1.png">
+<img src="assets/images/wole.png">
+Live link:- https://sammy92dec.github.io/rspgame/
 
 ## 3.2 CSS Validation
 
-<!--To validate the site CSS, the site CSS file was uploaded to the W3C Jigsaw validation service. The first attempt indicated a CSS rule regarding max-width that had to be altered to return back an error free test result. 
+To validate the site CSS, the site CSS file was uploaded to the W3C Jigsaw validation service. The first attempt indicated that there was an error in a class "text" that I wasn't even using. The way I fixed it is remove it.
 
-<img src="#">
+<img src="assets/images/cssv.png">
 
-## Acessibility Validation Service
-
-The Wave web accessibility evaluation tool was used to ensure that the site passed the industry-standard accessibility criteria. The results indicated no errors and good site structure.
-
-<img src="#">
-
-## 3.3 Lighthouse
-
-The Lighthouse performance app was used to test the website performance.
-<hr>
-
-<img src="#">
+## 3.3 Js Validation
 
 JsHint version 2.13.6 was used to test the javascript for the site and did not return any major issues that needed to be addressed within this iteration of the game. 
 
-<img src="#">
--->
+<img src="assets/images/jshint.png">
+
+### Accessibility Validation Service
+
+## 3.4 Lighthouse
+
+The Lighthouse performance app was used to test the website's performance.
+<hr>
+
+<img src="assets/images/lighthouse.png">
+
+## 3.5 Bugs and Fixes
+
+Some bugs that were discovered and corrected throughout the development:
+ | Bug                                                                                                                  | Fix                                                                                                |
+ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+ | Not being able to see if it's a win or lose. | It the emojis in front of the text.First I tried to use computerCamparison function but ad to fix the player botton as well. so the way it was fixed was by adding emojis in front the choices/buttons |
+ | The scores where not adding up | After fixing the result the scores came along too  |                           
 
 # 4. Deployment
-<!--
-This website was developed using Gitpod, via the gitpod/github applications and repositories. The following steps were taken:
 
-    1. Navigate to the Benjamin Banneker githup repository
-    2. Select the settings tab
-    3. Select Pages within the left navigation payne
-    4. Select the deploy from branch (main branch) under source
-    5. Upon succesful completion of the app and refresh of page the link is displayed
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
-   You may view the Github repository by clicking <a href="https://github.com/ericjonesdev/rock-paper-scissors">here</a>.
+- Log in (or sign up) to Github.
+- Find the repository for this project, rock-paper-scissors.
+- Click on the Settings link.
+- Click on the Pages link in the left hand side navigation bar.
+- In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+- Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+   You may view the Github repository by clicking <a href="https://github.com/Sammy92dec/rspgame">Here</a>
 
 # 5. Credits
 
+- Eric Jones for sharing README text ideas. github :- https://github.com/ericjonesdev
+- Ania Kubow for having alot of ideas to view. github :- https://github.com/kubowania/rock-paper-scissors-x3
+- https://codebeautify.org/htmlviewer that helped me make my html organized.
+- https://www.w3schools.com/ to check how and what choices to use most in my css.
+
 ## 5.1 Images Used
 
-   The following URLs are the sources of images:
-
-https://unsplash.com/@imanitor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-
-three friends by cottonbro studio: https://www.pexels.com/photo/friends-playing-together-10506091/
-
-https://www.freeimages.com/download/rock-paper-scissors-1238146
+Not alot of images were used with this games.I went with emojis to make it simple and quick to code.
+The images uploaded are screenshots from the actual game  for the README texts.It was taken by me.
+No logo for the game.
 
 ## 5.2 Code
 
-The following github respository was used as a template upon which this website was built:
-https://github.com/kubowania/rock-paper-scissors-x3/blob/main/rock-paper-scissors-examples/rock-paper-scissors-example-1/app.js
--->
+Code was recreated from my old project and added new features that would make it more self-made project.
+github :- https://github.com/Sammy92dec/rspgame
