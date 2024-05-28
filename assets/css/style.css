@@ -28,9 +28,10 @@ a {
 
 .button {
     border-radius: 15px;
-    color: white;
+    color: black;
     background-color: rgb(102, 102, 174);
     font-size: large;
+    margin: 3px;
 }
 
 .button:hover {
@@ -44,7 +45,7 @@ a:hover {
 footer {
     font-weight: bold;
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
     bottom:0;
     left:0;
     width: 100%;
@@ -60,4 +61,5 @@ footer {
     background-color: rgb(102, 102, 174);
     padding: 15px;
     border: solid;
+    margin: 1%;
 }
