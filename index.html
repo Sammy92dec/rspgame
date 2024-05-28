@@ -23,31 +23,32 @@
     <!-- header -->
 <div class="header">
     <a href="instruction.html">Instructions</a>
-    <a id="reset">Reset Scores</a>
+    <a id="reset" onreset="resetGame()">Reset Scores</a>
 </div>
 
     <!-- Saved Scores -->
 <div class="scores container">
     <p>Scores</p>
-    <p>Player: 0</p>
-    <p>Computer: 0</p>
+    <p id="playerScore Score">Player: 0</p>
+    <p id="ComputerScore Score">Computer: 0</p>
+    <p id="roundCount">Round: 0</p>
 </div>
 
 <div class="container">
     
     <!-- Score Text -->
     <div class="choices">
-        <h2 id="player-choice">Player: </h2>
-        <h2 id="computer-choice">Computer: </h2>
-        <h2 id="result">Results: </h2>
+        <h2 id="playerChoice">Player: </h2>
+        <h2 id="computerChoice">Computer: </h2>
+        <h2 id="endResult">Results: </h2>
     </div>
 
     <!-- Control Buttons -->
     <div class="controls">
         <h2 class="underline">Choose an option</h2>
-        <button class="button"> 🗿 Rock</button>
-        <button class="button">📜 Paper</button>
-        <button class="button"> ✂ Scissor</button>
+        <button class="button choiceBtn" id="rock"> 🗿 ROCK</button>
+        <button class="button choiceBtn" id="paper">📜 PAPER</button>
+        <button class="button choiceBtn" id="scissor"> ✂ SCISSOR</button>
     </div>
 
 </div>
