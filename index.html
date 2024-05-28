@@ -3,7 +3,7 @@
 
 
 <head>
-    
+
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -17,46 +17,46 @@
 
 </head>
 
+<body>
     <!-- Logo -->
     <h1 class="logo underline">Rock Paper Scissor</h1>
 
-    <!-- header -->
-<div class="header">
-    <a href="instruction.html">Instructions</a>
-    <a id="reset" onreset="resetGame()">Reset Scores</a>
-</div>
+    <!-- Header -->
+    <div class="header">
+        <a href="instruction.html">Instructions</a>
+        <button id="reset">Reset Scores</button>
+    </div>
 
     <!-- Saved Scores -->
-<div class="scores container">
-    <p>Scores</p>
-    <p id="playerScore Score">Player: 0</p>
-    <p id="ComputerScore Score">Computer: 0</p>
-    <p id="roundCount">Round: 0</p>
-</div>
-
-<div class="container">
-    
-    <!-- Score Text -->
-    <div class="choices">
-        <h2 id="playerChoice">Player: </h2>
-        <h2 id="computerChoice">Computer: </h2>
-        <h2 id="endResult">Results: </h2>
+    <div class="container">
+        <p>Scores</p>
+        <p id="playerScore">Player: 0</p>
+        <p id="computerScore">Computer: 0</p>
+        <p id="score">Round: 0</p>
     </div>
 
-    <!-- Control Buttons -->
-    <div class="controls">
-        <h2 class="underline">Choose an option</h2>
-        <button class="button choiceBtn" id="rock"> 🗿 ROCK</button>
-        <button class="button choiceBtn" id="paper">📜 PAPER</button>
-        <button class="button choiceBtn" id="scissor"> ✂ SCISSOR</button>
-    </div>
+    <div class="container">
+        <!-- Result Text -->
+        <div class="choices">
+            <p id="playerChoice">Player: </p>
+            <p id="computerChoice">Computer: </p>
+            <p id="endResult">Results: </p>
+        </div>
 
-</div>
+        <!-- Control Buttons -->
+        <div class="controls" id="game">
+            <h2 class="underline">Choose an option</h2>
+            <button class="button choiceBtn">🗿 ROCK</button>
+            <button class="button choiceBtn">📜 PAPER</button>
+            <button class="button choiceBtn">✂ SCISSORS</button>
+        </div>
+        
+    </div>
 
     <!-- Footer -->
-<footer>
-    <p>Copyrigt &copy; 2024. RSPGAME All Rights Reserved</p>
-</footer>
+    <footer>
+        <p>Copyright &copy; 2024. RSPGAME All Rights Reserved</p>
+    </footer>
 
 
     <!-- Javascript -->
