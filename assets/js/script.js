@@ -35,7 +35,8 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
   document.querySelector("#score").textContent = `Round: ${roundCount}`;
 
   if (roundCount >= 10) {
-    endResult.textContent += " Game over. Please reset the scores to play again.";
+  displayFinalResult();
+  
   }
 }));
 
@@ -45,36 +46,39 @@ function computerTurn() {
   switch(randNum) {
     case 0:
       computer = "🗿 ROCK";
-      computerForComparison = "ROCK";
       break;
     case 1:
       computer = "📜 PAPER";
-      computerForComparison = "PAPER";
       break;
     case 2:
       computer = "✂ SCISSORS";
-      computerForComparison = "SCISSORS";
       break;
   }
 }
 
 // Checking winner
 function getResult() {
-  if (computerForComparison === player) {
+  if (computer === player) {
     result = "A Draw!";
-  } else if (computerForComparison === "ROCK" && player === "PAPER") {
+  } else if (computer === "🗿 ROCK" && player === "📜 PAPER") {
     result = "You Win!";
-  } else if (computerForComparison === "ROCK" && player === "SCISSORS") {
+  } else if (computer === "🗿 ROCK" && player === "✂ SCISSORS") {
     result = "You Lose!";
-  } else if (computerForComparison === "PAPER" && player === "SCISSORS") {
+  } else if (computer === "📜 PAPER" && player === "✂ SCISSORS") {
     result = "You Win!";
-  } else if (computerForComparison === "PAPER" && player === "ROCK") {
+  } else if (computer === "📜 PAPER" && player === "🗿 ROCK") {
     result = "You Lose!";
-  } else if (computerForComparison === "SCISSORS" && player === "ROCK") {
+  } else if (computer === "✂ SCISSORS" && player === "🗿 ROCK") {
     result = "You Win!";
-  } else if (computerForComparison === "SCISSORS" && player === "PAPER") {
+  } else if (computer === "✂ SCISSORS" && player === "📜 PAPER") {
     result = "You Lose!";
+  } else {
+    result = "Error";
   }
+  console.log(`Result: ${result}`);
+
+
+  
 }
 
 function updateScore(result) {
@@ -82,6 +86,16 @@ function updateScore(result) {
     playerScore++;
   } else if (result === "You Lose!") {
     computerScore++;
+  }
+}
+
+function displayFinalResult() {
+  if (playerScore > computerScore) {
+    endResult.textContent = "Game over. You win! Please reset the scores to play again.";
+  } else if (playerScore < computerScore) {
+    endResult.textContent = "Game over. You lose! Please reset the scores to play again.";
+  } else {
+    endResult.textContent = "Game over. It's a tie! Please reset the scores to play again.";
   }
 }
 
