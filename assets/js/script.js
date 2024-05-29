@@ -14,20 +14,22 @@ let playerScore = 0;
 let computerScore = 0;
 let roundCount = 0;
 
-// Listeners for choices
+// Listeners when done after 10 rounds
 choiceBtns.forEach(button => button.addEventListener("click", () => {
   if (roundCount >= 10) {
     endResult.textContent = "Game over. Please reset the scores to play again.";
     return;
   }
-
+  
+// Score display
   player = button.textContent.trim().toUpperCase();
   computerTurn();
   playerChoice.textContent = `Player: ${player}`;
   computerChoice.textContent = `Computer: ${computer}`;
-  getResult(); // Call getResult to update the result variable
-  endResult.textContent = `Results: ${result}`; // Display the result
+  getResult(); 
+  endResult.textContent = `Results: ${result}`; 
 
+  //Score adds up
   updateScore(result);
   roundCount++;
   playerScoreDisplay.textContent = `Player: ${playerScore}`;
@@ -56,7 +58,7 @@ function computerTurn() {
   }
 }
 
-// Checking winner
+// Checking results
 function getResult() {
   if (computer === player) {
     result = "A Draw!";
@@ -78,9 +80,10 @@ function getResult() {
   console.log(`Result: ${result}`);
 
 
-  
+
 }
 
+// Adds scores 
 function updateScore(result) {
   if (result === "You Win!") {
     playerScore++;
@@ -89,6 +92,7 @@ function updateScore(result) {
   }
 }
 
+// Display when game is over
 function displayFinalResult() {
   if (playerScore > computerScore) {
     endResult.textContent = "Game over. You win! Please reset the scores to play again.";
