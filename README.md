@@ -1,4 +1,8 @@
 # Rock Paper Scissors
+
+Rock , Paper or Scissors - This game has been played for ages its fantastic that we can have it digitailised.Mostly it's played with two people but with this game, it will be Player vs Computer.
+With this project ,I included HTML,CSS and Javascript language.
+
 Live link:- https://sammy92dec.github.io/rspgame/
 
 # Table of Contents
